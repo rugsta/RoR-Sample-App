@@ -40,6 +40,9 @@ GEM
       tzinfo (~> 1.1)
     ansi (1.5.0)
     arel (7.1.4)
+    bcrypt (3.1.11)
+    bootstrap-sass (3.2.0.0)
+      sass (~> 3.2)
     builder (3.2.3)
     byebug (9.0.0)
     coderay (1.1.1)
@@ -110,6 +113,9 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
+    pry-byebug (3.4.2)
+      byebug (~> 9.0)
+      pry (~> 0.10)
     puma (3.4.0)
     rack (2.0.1)
     rack-test (0.6.3)
@@ -189,6 +195,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt (= 3.1.11)
+  bootstrap-sass (= 3.2.0.0)
   byebug (= 9.0.0)
   coffee-rails (= 4.2.1)
   guard (= 2.13.0)
@@ -197,6 +205,8 @@ DEPENDENCIES
   jquery-rails (= 4.1.1)
   listen (= 3.0.8)
   minitest-reporters (= 1.1.9)
+  pry
+  pry-byebug
   puma (= 3.4.0)
   rails (= 5.0.2)
   rails-controller-testing (= 0.1.1)
