@@ -14,5 +14,7 @@ class User < ApplicationRecord
                       :with => /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\Z/i,
                       :on => :create
 
+  before_save { self.email = email.downcase }
+
   has_secure_password
 end
